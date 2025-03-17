@@ -466,3 +466,60 @@ footer {
   background-color: #6a1b9a;
   color: white;
 }
+/* Responsywność dla telefonów */
+@media (max-width: 600px) {
+  /* Header - menu mobilne */
+  header {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a, .btn-header {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* Hero - dopasowanie tekstu */
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  /* Przyciski */
+  .btn {
+    padding: 12px 30px;
+  }
+
+  /* Tabele - przewijanie poziome */
+  .calendar {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  /* Formularz zapisy */
+  .form-zapisy input {
+    width: 90%;
+  }
+
+  .form-zapisy button {
+    width: 90%;
+  }
+}
